@@ -1,0 +1,89 @@
+Page 8
+  dig google.com
+    first asks dns for ip of requested destination
+    receive ip address for google
+    receive the html
+    browser renders page
+  browser
+    At their core, they all basically do the same thing:
+    fetch web pages and display them to the user.
+
+    Your browser gets the HTML text of the page, parses it into a structure that is internally
+    meaningful to the browser, lays out the content of the page, and styles the content before
+    displaying it to you. All of this work happens behind the scenes.
+
+page 9
+  AngularJS
+    angular is a client-side technology, written entirely in JavaScript. It works with the longestablished
+    technologies of the web (HTML, CSS, and JavaScript) to make the
+    development of web apps easier and faster than ever before.
+
+    The AngularJS team describes it as a “structural framework for dynamic web apps.”
+
+    AngularJS, on the other hand, augments HTML to give it native Model-View-Controller (MVC)
+    capabilities.
+
+page 11
+    one of the most basic and impressive features of AngularJS: data binding.
+
+page 12
+  Introducing Data Binding in AngularJS
+
+    Instead of merging data into a template and replacing a
+    DOM element, AngularJS creates live templates as a view. Individual components of the views are
+    dynamically interpolated live.
+
+    Views are interpolated when the view is evaluated with one or more variable substitutions;
+    the result is that the variables in our string are replaced with values.
+
+    Automatic data binding gives us the ability to consider the view to be a projection of the model
+    state. Any time the model is changed in the client-side model, the view reflects these changes
+
+    Model View Controller (or MVC) view of the world, the controller doesn’t have to worry
+    about being in the mix of rendering the view. This fact virtually eliminates the concern of
+    separating view and controller logic
+
+    MVC is a software architecture pattern that separates representation from user interaction.
+    Generally, the model consists of application data and functions that interact with
+    it, while the view presents this data to the user; the controller mediates between the
+    two.
+
+page 13
+    When Angular thinks that a value might change, it will run its own event loop to check if the
+    value is dirty. A value is considered dirty if it has changed since the last time the event loop ran.
+    This is how Angular is able to track and respond to changes in the app
+
+    Although there are more efficient ways to do it, dirty checking always works in
+    every browser and is predictable. Additionally, a lot of software that needs speed and
+    efficiency uses the dirty checking approach.
+
+  Simple Data Binding
+
+    The model object that we are referring to is the $scope object. The $scope object is
+    simply a JavaScript object whose properties are all available to the view and with which
+    the controller can interact. Don’t worry if this concept doesn’t make sense quite yet:
+    It’ll make sense with a few examples.
+
+    Just as ng-app declares that all elements inside of the DOM element upon which it is declared
+    belong to the Angular app, declaring the ng-controller attribute on a DOM element says that
+    all of the elements inside of it belong to the controller.
+
+page 15-16
+    we told Angular that we wanted to create a module named myApp by using
+    angular.module('myApp', []). The function angular.module() returns a module.
+
+    The .controller() function defines a new controller. It takes two arguments:
+    Data Binding and Your First AngularJS Web Application 16
+    • The first argument MyController is a string that defines the name of the controller
+    • The second argument is a definition function that defines how the controller will work.
+
+page 17
+    In this example, the MyController definition function takes two parameters, the $scope
+    of the DOM element and the $timeout. Technically, this is called dependency injection.
+    Don’t worry about that scary term: it’s just a way to “require” (i.e. import) libraries we
+    want to use.
+
+    
+
+end page 22
+want page 64
